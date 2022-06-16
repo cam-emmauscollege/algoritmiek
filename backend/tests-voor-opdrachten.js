@@ -143,9 +143,9 @@ describe('Opgave 5', function() {
 /* **** Opgave 6  **** */
 /* ******************* */
 describe('Opgave 6', function() {
-  describe('rijtje()...', function() {
+  describe('mooiRijtje()...', function() {
     it('...geeft een lege string', function() {
-      expect(opgave6.mooiRijtje(0)).to.equal("", 'rijtje() zou "" terug moeten geven');
+      expect(opgave6.mooiRijtje()).to.equal("", 'rijtje() zou "" terug moeten geven');
     });
   });
   describe('rijtje(0)...', function() {

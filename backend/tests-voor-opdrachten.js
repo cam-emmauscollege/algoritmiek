@@ -177,7 +177,7 @@ describe('Opgave 7', function() {
   describe('gemiddelde( array met numbers )...', function() {
     it('...geeft het juiste gemiddelde terug', function() {
       expect(opgave7.gemiddelde([0, 1])).to.equal(0.5, 'gemiddelde([0, 1]) zou 0.5 terug moeten geven');
-      expect(opgave7.gemiddelde([1, 5, 10, 19])).to.equal(6.25, 'gemiddelde([1, 5, 10, 19]) zou 6.25 terug moeten geven');
+      expect(opgave7.gemiddelde([1, 5, 10, 19])).to.equal(8.75, 'gemiddelde([1, 5, 10, 19]) zou 8.75 terug moeten geven');
       expect(opgave7.gemiddelde([1.2, 5.9, 10.0, 19.5])).to.equal(9.15, 'gemiddelde([1.2, 5.9, 10.0, 19.5]) zou 9.15 terug moeten geven');
       expect(opgave7.gemiddelde([1.2, -5.9, 10.0, 19.5])).to.equal(6.2, 'gemiddelde([1.2, -5.9, 10.0, 19.5]) zou 6.2 terug moeten geven');
     });

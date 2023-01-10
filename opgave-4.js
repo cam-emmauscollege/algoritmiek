@@ -2,8 +2,7 @@ module.exports = {alleCijfers}
 
 /* Algoritmiek opgave #4
    Opdracht: pas de functie zo aan,
-   dat de functie onder elkaar de
-   cijfers 0 t/m 9 print
+   dat de functie achter elkaar de cijfers 0 t/m 9 teruggeeft
 */
 
 function alleCijfers() {

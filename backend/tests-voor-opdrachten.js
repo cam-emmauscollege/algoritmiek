@@ -115,7 +115,7 @@ describe('Opgave 4', function() {
 describe('Opgave 5', function() {
   describe('rijtje()...', function() {
     it('...geeft een lege string', function() {
-      expect(opgave5.rijtje(0)).to.equal("", 'rijtje() zou "" terug moeten geven');
+      expect(opgave5.rijtje()).to.equal("", 'rijtje() zou "" terug moeten geven');
     });
   });
   describe('rijtje(0)...', function() {

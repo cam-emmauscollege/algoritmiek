@@ -9,7 +9,7 @@ module.exports = {mooiRijtje}
 */
 
 function mooiRijtje(eindgetal) {
-  var uitkomst = ""
+  var uitkomst = "";
   
   // haal hieronder ______ weg en vervang dit door het juiste stukje code
   for (var teller = 0; ______ ; teller++) {

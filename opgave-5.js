@@ -3,7 +3,7 @@ module.exports = {rijtje}
 /* Algoritmiek opgave #5
    Opdracht: pas de functie zo aan, dat de functie alle getallen van 0
    tot en met de parameter 'eindgetal' teruggeeft, aan elkaar geplakt,
-   zoals "123456789101112131415" bij rijtje(15).
+   zoals "0123456789101112131415" bij rijtje(15).
    De functie hoeft niet te werken met negatieve getallen of kommagetallen.
 */
 

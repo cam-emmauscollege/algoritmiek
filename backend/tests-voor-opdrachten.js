@@ -237,9 +237,9 @@ describe('Opgave 10', function() {
   describe('aantalKeerA( "string zonder a\'s" )...', function() {
     it('...geeft 0 terug', function() {
       expect(opgave10.aantalKeerA("hoi")).to.equal(0, 'aantalKeerA("hoi") zou 0 terug moeten geven');
-      expect(opgave10.aantalKeerA("vis")).to.equal(0, 'aantalKeerA("vis") zou 2 terug moeten geven');
+      expect(opgave10.aantalKeerA("vis")).to.equal(0, 'aantalKeerA("vis") zou 0 terug moeten geven');
       expect(opgave10.aantalKeerA("dessert")).to.equal(0, 'aantalKeerA("dessert") zou 0 terug moeten geven');
-      expect(opgave10.aantalKeerA("doktersopleiding")).to.equal(0, 'aantalKeerA("doktersopleiding") zou 3 terug moeten geven');
+      expect(opgave10.aantalKeerA("doktersopleiding")).to.equal(0, 'aantalKeerA("doktersopleiding") zou 0 terug moeten geven');
     });
   });
   describe('aantalKeerA( string met a\'s )...', function() {

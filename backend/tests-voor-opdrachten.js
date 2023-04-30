@@ -248,7 +248,7 @@ describe('Opgave 10', function() {
       expect(opgave10.aantalKeerA("aas")).to.equal(2, 'aantalKeerA("aas") zou 2 terug moeten geven');
       expect(opgave10.aantalKeerA("vlaai")).to.equal(2, 'aantalKeerA("vlaai") zou 2 terug moeten geven');
       expect(opgave10.aantalKeerA("anja")).to.equal(2, 'aantalKeerA("anja") zou 2 terug moeten geven');
-      expect(opgave10.aantalKeerA("brandweercommandantenacademie")).to.equal(5, 'aantalKeerA("brandweercommandantenacademie") zou 3 terug moeten geven');
+      expect(opgave10.aantalKeerA("brandweercommandantenacademie")).to.equal(5, 'aantalKeerA("brandweercommandantenacademie") zou 5 terug moeten geven');
     });
   });
   describe('minimum( lege string )...', function() {

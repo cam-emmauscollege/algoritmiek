@@ -1,7 +1,7 @@
 module.exports = {isAnagram}
 
 /*  Algoritmiek opgave 15
-    Hieronder zie je de functie 'isAnagram(x)'
+    Hieronder zie je de functie 'isAnagram(x, y)'
     Deze functie krijgt twee strings als parameters mee: x en y
     De functie moet true terugegeven als x een anagram is van y,
     dat wil zeggen, als x uit dezelfde letters bestaat als y.

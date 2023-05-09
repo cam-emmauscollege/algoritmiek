@@ -13,6 +13,7 @@ const opgave12 = require('../opgave-12.js')
 const opgave13 = require('../opgave-13.js')
 const opgave14 = require('../opgave-14.js')
 const opgave15 = require('../opgave-15.js')
+const opgave16 = require('../opgave-16.js')
 const chai = require('chai')
 const expect = chai.expect
 const assert = chai.assert
@@ -407,6 +408,32 @@ describe('Opgave 15', function() {
   });
 });
 
+describe('Opgave 16', function(){
+	describe('isSoortVanAnagram(x,y)...', function(){
+		it('...geeft true terug als x en y uit dezelfde kleine letters bestaan.', function(){
+			expect(opgave16.isSoortVanAnagram('marcheren', 'charmeren')).to.equal(true, 'isSoortVanAnagram("marcheren", "charmeren") zou true terug moeten geven')
+			expect(opgave16.isSoortVanAnagram('mest', 'stem')).to.equal(true, 'isSoortVanAnagram("mest", "stem") zou true terug moeten geven');
+		})
+		it('...geeft false terug als x en y niet uit dezelfde letters bestaan.', function(){
+			expect(opgave16.isSoortVanAnagram('truffels', 'honden')).to.equal(false, 'isSoortVanAnagram("truffels", "honden") zou false moeten teruggeven')
+			expect(opgave16.isSoortVanAnagram('paraplu', 'appelsteel')).to.equal(false, 'isSoortVanAnagram("paraplu", "appelsteel" zou false moeten teruggeven')
+		})
+		it('...geeft true terug als x en y een soort van anagrammen zijn.', function(){
+			expect(opgave16.isSoortVanAnagram('rekenmachine', 'manier')).to.equal(true, 'isSoortVanAnagram("rekenmachine", "manier") zou true moeten teruggeven')
+			expect(opgave16.isSoortVanAnagram('tandpasta', 'panda')).to.equal(true, 'isSoortVanAnagram("tandpasta", "panda") zou true moeten teruggeven')
+		})
+		it('...werkt ook correct met hoofdletters, cijfers spaties en leestekens.', function(){
+			expect(opgave16.isSoortVanAnagram('All4You', '4you')).to.equal(true, 'isSoortVanAnagram("All4You", "4you") zou true moeten teruggeven')
+			expect(opgave16.isSoortVanAnagram('Stop!', 'De postbode is er!')).to.equal(true, 'isSoortVanAnagram("Stop!", "De postbode is er!") zou true moeten teruggeven')
+		})
+		it('...werkt ook als één of beide parameters een lege string is.', function(){
+			expect(opgave16.isSoortVanAnagram('', '')).to.equal(true, 'isSoortVanAnagram("", "") zou true moeten teruggeven')
+			expect(opgave16.isSoortVanAnagram('frisbee', '')).to.equal(true, 'isSoortVanAnagram("frisbee", "") zou true moeten teruggeven')
+			expect(opgave16.isSoortVanAnagram('', 'frisbee')).to.equal(true, 'isSoortVanAnagram("", "frisbee") zou true moeten teruggeven')
+		})
+	})
+})
+
 
 delete require.cache[require.resolve('../opgave-1.js')]
 delete require.cache[require.resolve('../opgave-2.js')]
@@ -423,3 +450,4 @@ delete require.cache[require.resolve('../opgave-12.js')]
 delete require.cache[require.resolve('../opgave-13.js')]
 delete require.cache[require.resolve('../opgave-14.js')]
 delete require.cache[require.resolve('../opgave-15.js')]
+delete require.cache[require.resolve('../opgave-16.js')]
